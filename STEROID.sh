@@ -20,7 +20,7 @@ loading() {
 # Welcome message with green text and matrix effect
 clear
 matrix_welcome
-echo -e "\033[32mWELCOME TO TERMUX STEROIDS MADE BY EKOAHAMDUTIVNASTI\033[0m"
+echo -e "\033[32mWELCOME TO TERMUX STEROIDS MADE BY AB KHAN"
 loading
 
 # Update and upgrade Termux
@@ -37,25 +37,25 @@ HISTSIZE=1000
 HISTFILESIZE=2000
 PROMPT_COMMAND='history -a'
 
-# Change the prompt to ekoahamdutivnasti@fbi in red
+# Change the prompt to abkhan@fbi in red
 echo -e "\033[32mChanging the prompt...\033[0m"
-echo 'export PS1="\[\e[31m\]ekoahamdutivnasti@fbi \[\e[32m\]\$ "' >> ~/.bashrc
+echo 'export PS1="\[\e[31m\]abkhan@fbi \[\e[32m\]\$ "' >> ~/.bashrc
 source ~/.bashrc
 
 # Ask the user if they want to install Nethunter rootless
-echo -e "\033[32mDo you also want to install Nethunter rootless? (Y/N)\033[0m"
+echo -e "\033[32mDo you also want to install Nethunter rootless? (Y/N)\033[ab"
 read -r install_nethunter
 
 if [[ "$install_nethunter" =~ ^[Yy]$ ]]; then
-  echo -e "\033[32mStarting Nethunter rootless installation...\033[0m"
+  echo -e "\033[32mStarting Nethunter rootless installation...\033[ab"
   curl -LO https://offs.ec/2MceZWr
   chmod +x 2MceZWr
   ./2MceZWr
-  echo -e "\033[32mNethunter rootless installation complete.\033[0m"
+  echo -e "\033[32mNethunter rootless installation complete.\033[ab"
 else
-  echo -e "\033[32mSkipping Nethunter rootless installation.\033[0m"
+  echo -e "\033[32mSkipping Nethunter rootless installation.\033[ab"
 fi
 
 # Script completion message
-echo -e "\033[32mTermux setup complete. Enjoy your enhanced Termux experience!\033[0m"
+echo -e "\033[32mTermux setup complete. Enjoy your enhanced Termux experience!\033[ab"
 
